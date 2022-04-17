@@ -1,0 +1,8 @@
+#!/bin/bash
+cd aa_1
+mkdir bb_1 bb_2 bb_3
+cd bb_1
+touch file1.txt file2.txt file3.txt file4.json file5.json
+mkdir cc_1 cc_2 cc_3
+ls -la
+mv C:/users/chaos/Course/Terminal/aa_1/bb_1/{file1.txt,file2.txt} C:/users/chaos/Course/Terminal/aa_1/bb_2/

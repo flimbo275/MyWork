@@ -1,0 +1,126 @@
+# XML
+ 21. Создать внешний репозиторий c названием XML.
+
+Recent Repositories - New
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+
+git clone https://github.com/flimbo275/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+
+cd XML
+touch new.xml
+
+ 24. Добавить файл под гит.
+
+git add new.xml
+
+ 25. Закоммитить файл.
+
+git commit -m "add 1 file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+vim new.xml 
+
+<AboutMe>
+        <Name>Elena</Name>
+        <Age>31</Age>
+        <Pets>1</Pets>
+        <Salary>NZD 4000</Salary>
+</AboutMe>
+
+ 28. Отправить изменения на внешний репозиторий.
+
+git commit -am "update 1 file"
+git push
+
+ 29. Создать файл preferences.xml
+
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+
+vim preferences.xml
+
+<Preferences>
+        <FavMovie>The Lord of the Rings</FavMovie>
+        <FavSeries>Simpsons</FavSeries>
+        <FavFood>meat</FavFood>
+        <FavSeason>summer</FavSeason>
+        <WantToVisit>New Zealand</WantToVisit>
+</Preferences>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+vim sklls.xml
+
+<Skills>
+	<skill>Client-server model</skill>
+        <skill>HTTP server requests</skill>
+        <skill>JSON XML structure</skill>
+        <skill>API Testing Postman</skill>
+        <skill>logs from external server</skill>
+        <skill>Dev Tools of web browsers</skill>
+        <skill>VPN</skill>
+        <skill>mobile testing</skill>
+        <skill>XCode</skill>
+        <skill>Android Studio</skill>
+        <skill>Linux terminal</skill>
+        <skill>SQL</skill>
+        <skill>Postgres</skill>
+        <skill>Redis</skill>
+        <skill>Jmeter</skill>
+        <skill>Scrum</skill>
+</Skills>
+
+ 32. Сделать коммит в одну строку.
+
+git add sklls.xml preferences.xml | git commit -m "add 2 files"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+
+git push 
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+
+"add file", "create a new file"
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+"commit new file"
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+bug_report.xml - "Edit this file"
+
+<BugReport>  
+  <Summary>Axe doesn't damage the orcs</Summary>  
+  <Category>Gameplay</Category>  
+  <Severity>Critical</Severity>  
+  <Priority>High</Priority>  
+  <Steps>  
+    <Step1>Reach the second act</Step1>  
+    <Step2>Go to the_Auberdine lake</Step2>  
+    <Step3>Talk to Ricardo</Step3>  
+    <Step4>Take up an axe-type weapon</Step4>  
+    <Step5>Attack and try to damage the orc</Step5>  
+  </Steps>  
+  <Result>Orc has no damage</Result>  
+  <ExpectedResult>Orc should be damaged</ExpectedResult>  
+  <Version>3.2.4</Version>  
+  <Platform>PS5</Platform>
+</BugReport>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+"Commit changes"
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+
+git pull

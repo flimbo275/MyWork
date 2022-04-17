@@ -1,0 +1,132 @@
+# JSON
+4. Создать внешний репозиторий c названием JSON
+
+Recent Repositories - New
+
+5. Клонировать репозиторий JSON на локальный компьютер
+ 
+git clone - https://github.com/flimbo275/JSON.git
+
+6. Внутри локального JSON создать файл “new.json”.  
+
+cd JSON
+touch new.json
+
+ 7. Добавить файл под гит.
+
+git add new.json
+
+ 8. Закоммитить файл.
+
+git commit -m "add 1 file"
+
+ 9. Отправить файл на внешний GitHub репозиторий. 
+
+git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+vim new.json
+
+{
+        "name":"Elena",
+        "age":31,
+        "pets":1,
+        "salary":"NZD 4000"
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+
+git commit -am "update 1 file"
+git push
+
+ 12. Создать файл preferences.json
+
+touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+
+vim preferences.json
+
+{
+        "fav_movie":"The_Lord_of_the_Rings",
+        "fav_series":"Simpsons",
+        "fav_food":"meat",
+        "fav_season":"summer",
+        "want_to_visit":"New_Zealand"
+}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+
+vim sklls.json
+
+{
+        "skills":{
+                "skill_1":"Client-server_model",
+                "skill_2":"HTTP_server_requests",
+                "skill_3":"JSON_XML_structure",
+                "skill_4":"API_Testing_Postman",
+                "skill_5":"logs_from_external_server",
+                "skill_6":"Dev_Tools_of_web_browsers",
+                "skill_7":"VPN",
+                "skill_8":"mobile_testing",
+                "skill_9":"XCode",
+                "skill_10":"Android_Studio",
+                "skill_11":"Linux_terminal",
+                "skill_12":"SQL",
+                "skill_13":"Postgres",
+                "skill_14":"Redis",
+                "skill_15":"Jmeter",
+                "skill_16":"Scrum"
+        	}
+}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+
+git add preferences.json sklls.json
+git commit -m "add 2 files"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+
+"add file", "create a new file"
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+"commit new file"
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+bug_report.json - "Edit this file"
+
+{
+        "Summary":"Axe_doesn't_damage_the_orcs",
+        "Category":"Gameplay",
+        "Severity":"Critical",
+        "Priority":"High",
+        "Steps_to_Reproduce":
+        {
+                "Step_1":"Reach_the_second_act",
+                "Step_2":"Go_to_the_Auberdine_lake",
+                "Step_3":"Talk_to_Ricardo",
+                "Step_4":"Take_up_an_axe-type_weapon",
+                "Step_5":"Attack_and_try_to_damage_the_orc"
+        },
+        "Result":"Orc_has_no_damage",
+        "Expected_result":"Orc_should_be_damaged",
+        "Version":"3.2.4",
+        "Platform":"PS5"
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+"Commit changes"
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+
+В GitBash пишем команду:
+git pull
+
+
+
+
