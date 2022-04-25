@@ -88,7 +88,7 @@ let age_3=60;
 //  32. Если age_1  > age_3, вывести в консоль “Keep calm and look Culture channel”.
 //  33. Иначе выводите “Technical work”.
 if(age_1<age_2) {
-    console.log("You don’t have access cause your age is "+age_1+" It’s less then ")
+    console.log("You don’t have access cause your age is "+age_1+" It’s less than "+age_2)
 }
 else if(age_1>=age_2&&age_1<age_3) {
   console.log("Welcome  !")
@@ -97,3 +97,100 @@ else if(age_1>age_3) {
     console.log("Keep calm and look Culture channel")
 }
 else {console.log("Technical work")};
+
+console.log ("----------HW_1*----------")
+
+// HW_1* 
+
+// Задания с разным количеством звездочек:)
+// 1*:
+// Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
+// Пример: const checkAge = function(age) {
+// Ваши преобразования
+// }
+
+function checkAge (age){
+  if (age<18) {
+    console.log ("You don’t have access cause your age is "+age+" It’s less than 18")
+  } else if (age>=18&&age<60) {
+    console.log("Welcome  !")
+  }
+    else if (age>60){
+      console.log("Keep calm and look Culture channel")
+  }
+  else {console.log("Technical work")}
+}
+
+// Вывести в консоль результат работы функции с возрастами 17, 18, 61
+
+checkAge(17);
+checkAge(18);
+checkAge(61);
+
+
+// 2*:
+// Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
+console.log ("----------HW_2*----------")
+
+function checkAge1 (age1){
+  if (typeof age1 == "number")
+  {
+    if (age1<18) {
+    console.log ("You don't have access cause your age is "+age1+" It's less than 18")
+  } else if (age1>=18 && age1<60) {
+    console.log("Welcome  !")
+  }
+    else if (age1>60){
+      console.log("Keep calm and look Culture channel")
+  }
+  else {console.log("Technical work")}
+  }
+  else {console.log("Data type error")}
+}
+
+checkAge1(13);
+
+// 3**:
+// Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+console.log ("----------HW_3**----------")
+
+function checkAge2 (age2){
+  let age3=Number(age2)
+  if (age3==Number(age2))
+  {
+    if (age3<18) {
+    console.log ("You don't have access cause your age is "+age3+" It's less than 18")
+  } else if (age3>=18 && age3<60) {
+    console.log("Welcome  !")
+  }
+    else if (age3>60){
+      console.log("Keep calm and look Culture channel")
+  }
+  else {console.log("Technical work")}
+  }
+  else {console.log("Data type error")}
+}
+
+checkAge2("13");
+// 4***:
+// Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+console.log ("----------HW_4***----------")
+
+function checkAge3 (age3){
+  let age4=Number(age3)
+  if (age4==Number(age3))
+  {
+    if (age4<18) {
+    console.log ("You don't have access cause your age is "+age4+" It's less than 18")
+  } else if (age4>=18 && age4<60) {
+    console.log("Welcome  !")
+  }
+    else if (age4>60){
+      console.log("Keep calm and look Culture channel")
+  }
+  else {console.log("Technical work")}
+  }
+  else {console.log("Data type error")}
+}
+
+checkAge3(prompt("How old are you?"))
