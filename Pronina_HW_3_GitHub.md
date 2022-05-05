@@ -33,7 +33,7 @@ vim new.json
         "name":"Elena",
         "age":31,
         "pets":1,
-        "salary":"NZD 4000"
+        "salary":4000
 }
 ```
 8. Отправить изменения на внешний репозиторий.
@@ -165,7 +165,7 @@ vim new.xml
         <Name>Elena</Name>
         <Age>31</Age>
         <Pets>1</Pets>
-        <Salary>NZD 4000</Salary>
+        <Salary>4000</Salary>
 </AboutMe>
 ```
  8. Отправить изменения на внешний репозиторий.
