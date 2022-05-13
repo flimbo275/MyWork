@@ -83,7 +83,8 @@ let age_2 = 18;
 let age_3 = 60;
 
 //  29. Создать if в котором будите проверять значение переменной age_1
-//  30. Если age_1 < age_2, вывести в консоль “You don’t have access cause your age is ” + age_1 + “ It’s less then ”
+//  30. Если age_1 < age_2, вывести в консоль:
+// “You don’t have access cause your age is ” + age_1 + “ It’s less then ”
 //  31. Если age_1 >=  age_2 и age_1 <  age_3, вывести в консоль “Welcome  !”
 //  32. Если age_1  > age_3, вывести в консоль “Keep calm and look Culture channel”.
 //  33. Иначе выводите “Technical work”.
@@ -174,28 +175,29 @@ const checkAge2 = function(age){
 checkAge2("13");
 
 // 4***:
-// Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
-// console.log ("----------Task_4***----------")
+// Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt 
+// в привязанной верстке
+console.log ("----------Task_4***----------")
 
-// const checkAge3 = function(age){
-//   age = prompt("How old are you?")
+const checkAge3 = function(age){
+  age = prompt("How old are you?")
 
-// if (!isNaN(age) && age != "")
-//   {
-//     if (age < age_2) {
-//     alert("You don't have access cause your age is "+age+" It's less than 18")
-//     } else if (age >= age_2 && age < age_3) {
-//     alert("Welcome  !")
-//     }
-//     else if (age>age_3){
-//       alert("Keep calm and look Culture channel")
-//     }
-//     else {alert("Technical work")}
-//  }
-//   else {
-//     alert("It's not a number")
-//   }
-// }
+if (!isNaN(age) && age != "")
+  {
+    if (age < age_2) {
+    alert("You don't have access cause your age is "+age+" It's less than 18")
+    } else if (age >= age_2 && age < age_3) {
+    alert("Welcome  !")
+    }
+    else if (age>age_3){
+      alert("Keep calm and look Culture channel")
+    }
+    else {alert("Technical work")}
+ }
+  else {
+    alert("It's not a number")
+  }
+}
 
-// checkAge3();
+checkAge3();
 
