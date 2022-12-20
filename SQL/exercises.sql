@@ -64,3 +64,8 @@ Select Printer.model, Printer.price
 from Printer
 join Product on Product.model=Printer.model
 where maker='B'
+
+Задача: В конце года цену всех книг на складе пересчитывают – снижают ее на 30%. Написать SQL запрос, который из таблицы book выбирает названия, авторов, количества и вычисляет новые цены книг. Столбец с новой ценой назвать new_price, цену округлить до 2-х знаков после запятой.
+
+select title, author, amount, round(price*0.7, 2) as new_price from book
+
