@@ -6,7 +6,7 @@ Recent Repositories - New
 ```
 2. Клонировать репозиторий JSON на локальный компьютер
 ``` 
-git clone - https://github.com/flimbo275/JSON.git
+git clone https://github.com/flimbo275/JSON.git
 ```
 3. Внутри локального JSON создать файл “new.json”  
 ```
